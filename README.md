@@ -1,4 +1,4 @@
-# [fakestoreapi.com](https://github.com/user/repo/blob/branch/other_file.md)
+# [fakestoreapi.com](https://fakestoreapi.com/products)
 
 
 ## Api consumed using riverpod

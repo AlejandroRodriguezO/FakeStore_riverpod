@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:store/pages/controller/home_controller.dart';
 
 import '../provider/provider.dart';
 import 'controller/home_state.dart';
@@ -45,7 +44,9 @@ class HomePage extends ConsumerWidget {
                   const SizedBox(height: 10),
                   OutlinedButton(
                     onPressed: () {
-                      // context.read<StoreBloc>().add(StoreProductsRequest());
+                      ref
+                          .watch(homeNotifier.notifier)
+                          .getStoreProductsRequested();
                     },
                     child: const Text('Intenta nuevamente'),
                   ),
